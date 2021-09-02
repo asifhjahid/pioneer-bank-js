@@ -45,17 +45,61 @@
 }
 
 .login-area .submit-btn{
-    margin-top: 10px;
-}
-.login-area .submit-btn{
     padding: 4px 10px;
     border: none;
     background-color: #0f770f;
     color: #ffffff;
     border-radius: 3px;
+    margin-top: 10px;
 }
 .login-area .submit-btn:hover{
     background-color: rgba(9, 71, 9, 0.9);
     transition: background-color .3s ease-in-out;
 
+}
+
+#transaction{
+    display: none;
+}
+#transaction .deposit{
+    background-color: rgb(67, 186, 226);
+}
+#transaction .withdraw{
+    background-color: rgb(84, 219, 113);
+}
+#transaction .balance{
+    background-color: rgb(97, 116, 224);
+}
+#transaction .seeTransaction{
+    padding: 10px 5px;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+#transaction .seeTransaction h2{
+    text-align: center;
+    color: #ffffff;
+}
+#transaction .seeTransaction h4{
+    text-align: center;
+}
+.transaction-submit{
+    height: 22vh;
+     box-shadow: 3px 3px 6px #c0e6f1, 
+                -3px -3px 6px #c0e6f1; 
+    border-radius: 8px;
+    margin-top: 80px;
+    padding: 10px;
+}
+.transaction-submit button{
+    padding: 4px 10px;
+    border: none;
+    color: #ffffff;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.transaction-submit .deposit-btn{
+    background-color:rgb(67, 186, 226) ;
+}
+.transaction-submit .withdraw-btn{
+    background-color: rgb(84, 219, 113);
 }
