@@ -34,7 +34,7 @@
            <div class="col-md-4" >
                <div class="deposit seeTransaction">
                 <h4>Deposit</h4>
-                <h2>৳ ১০০০</h2>
+                <h2>৳ <span id="current-deposit">00</span> </h2>
                </div>
            </div>
            <div class="col-md-4">
@@ -54,15 +54,15 @@
            <div class="col-md-6">
                <div class="transaction-submit">
                 <h4>Deposit</h4>
-                <input type="text" class="form-control">
-                <button class="deposit-btn">Deposit</button>
+                <input id="deposit-amount" type="text" class="form-control" placeholder="$ amount you want to deposit">
+                <button id="deposit-btn">Deposit</button>
                </div>
         </div>
            <div class="col-md-6">
                <div class="transaction-submit">
                     <h4>Withdraw</h3>
-                    <input type="text" class="form-control">
-                    <button class="withdraw-btn">Withdraw</button>
+                    <input type="text" class="form-control" placeholder="$ amount you want to withdraw">
+                    <button id="withdraw-btn">Withdraw</button>
                </div>
             </div>
        </div>

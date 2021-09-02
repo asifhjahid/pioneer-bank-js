@@ -97,9 +97,15 @@
     border-radius: 3px;
     margin-top: 10px;
 }
-.transaction-submit .deposit-btn{
+.transaction-submit  #deposit-btn{
     background-color:rgb(67, 186, 226) ;
 }
-.transaction-submit .withdraw-btn{
+.transaction-submit #deposit-btn:hover{
+    background-color:rgb(36, 135, 168) ;
+}
+.transaction-submit #withdraw-btn{
     background-color: rgb(84, 219, 113);
+}
+.transaction-submit #withdraw-btn:hover{
+    background-color: rgb(49, 167, 75);
 }
