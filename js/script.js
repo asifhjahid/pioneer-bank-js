@@ -14,21 +14,26 @@ let depositBtn =  document.querySelector('#deposit-btn');
 depositBtn.addEventListener('click',()=>{
     let depositMoney = inputValue('#deposit-amount');
     
+    if(depositMoney < 0){
+        alert('Deposit Number cannot be negative.');
+    }
+    else{
+        updatedAmount('#current-deposit',depositMoney)
+        // let currentDeposit = document.querySelector('#current-deposit').innerText;
+        // let currentDepositAmount = parseFloat(currentDeposit);
+        // let totalDeposit = currentDepositAmount + depositMoney;
+        // document.querySelector('#current-deposit').innerText = totalDeposit;
+        document.querySelector('#deposit-amount').value = "";
+        
+        updatedAmount("#current-balance",depositMoney)
     
-    updatedAmount('#current-deposit',depositMoney)
-    // let currentDeposit = document.querySelector('#current-deposit').innerText;
-    // let currentDepositAmount = parseFloat(currentDeposit);
-    // let totalDeposit = currentDepositAmount + depositMoney;
-    // document.querySelector('#current-deposit').innerText = totalDeposit;
-    document.querySelector('#deposit-amount').value = "";
-    
-    updatedAmount("#current-balance",depositMoney)
-
-    // let currentBalance = document.querySelector('#current-balance').innerText;
-    // let currentBalanceAmount = parseFloat(currentBalance);
-    // let totalBalance = currentBalanceAmount + depositMoney;
-    
-    // document.querySelector('#current-balance').innerText = totalBalance;
+        // let currentBalance = document.querySelector('#current-balance').innerText;
+        // let currentBalanceAmount = parseFloat(currentBalance);
+        // let totalBalance = currentBalanceAmount + depositMoney;
+        
+        // document.querySelector('#current-balance').innerText = totalBalance;
+    }
+   
 })
  
 
